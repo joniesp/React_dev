@@ -17,4 +17,4 @@ const ListaCitas = ({citas}) => (
     </div>
 )
 
-export default ListaCitas
+export default ListaCitas;

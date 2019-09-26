@@ -13,4 +13,4 @@ const Cita = ({cita}) => (
     </div>
 )
 
-export default Cita
+export default Cita;
