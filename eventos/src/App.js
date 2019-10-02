@@ -1,11 +1,24 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import Header from './components/header'
+import Formulario from './components/formulario'
+import ListaEventos from './components/listaEventos'
+
+import CategoriasProvider from './context/CategoríasContext'
+import EventosProvider from './context/EventosContext'
 
 function App() {
   return (
-    <Fragment>
-      <Header/>
-    </Fragment>
+    <EventosProvider>
+      <CategoriasProvider>
+        <Header/>
+
+        <div className="uk-container">
+          <Formulario/>
+          <ListaEventos/>
+        </div>
+
+      </CategoriasProvider>
+    </EventosProvider>
   );
 }
 
